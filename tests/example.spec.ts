@@ -52,7 +52,10 @@ test.only('check Java page', async ({page}) =>{
   // check if "Playwright is distributed as a set of Maven modules. The easiest way to use it is to add one dependency to your project's pom.xml as described below. If you're not familiar with Maven please refer to its documentation."
   await expect(page.getByText("Playwright is distributed as a set of Maven modules. The easiest way to use it is to add one dependency to your project's pom.xml as described below. If you're not familiar with Maven please refer to its documentation.")).toBeVisible();
 })
-/** npx playwright test tests/ --project=chromium で実行*/
+/** 
+ * Run all the tests against a specific project https://playwright.dev/docs/test-cli
+ * npx playwright test tests/ --project=chromium で実行
+ * */
 
 
 // // test.only('check Java page', async ({ page }) => {
