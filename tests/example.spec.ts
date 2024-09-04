@@ -1,18 +1,23 @@
 import { test, expect } from '@playwright/test';
 
+//ブラウザ開いた際に遷移するURL
 test('has title', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
+  //遷移したURLでタイトル表示
   // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(/Playwright/);
 });
 
 test('get started link', async ({ page }) => {
+  //このURLリンクにいって
   await page.goto('https://playwright.dev/');
 
+  //'Get started'というリンクをクリックすると
   // Click the get started link.
   await page.getByRole('link', { name: 'Get started' }).click();
 
+  //リンククリック後、/introに遷移
   // Expects the URL to contain intro.
   await expect(page).toHaveURL(/.*intro/);
 });
