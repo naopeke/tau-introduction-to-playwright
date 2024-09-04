@@ -1,7 +1,7 @@
 {
   "name": "tau-introduction-to-playwright",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hi 👋🏽!",
   "main": "index.js",
   "scripts": {
     "test:e2e": "npx playwright test tests/",
@@ -15,7 +15,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.33.0",
-    "dotenv": "^16.0.3"
+    "@playwright/test": "^1.46.1",
+    "@types/node": "^22.5.3",
+    "dotenv": "^16.4.5"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "playwright": "^1.46.1",
+    "playwright-core": "^1.46.1",
+    "undici-types": "^6.19.8"
   }
 }
