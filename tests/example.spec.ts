@@ -36,7 +36,7 @@ test('get started link', async ({ page }) => {
  * 
  */
 
-test ('check Java page', async ({page}) =>{
+test.only('check Java page', async ({page}) =>{
   // open the page
   await page.goto('https://playwright.dev');
   // click 'get started'
